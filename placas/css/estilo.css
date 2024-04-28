@@ -1,0 +1,61 @@
+#map {
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  
+
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+
+.main-input-search {
+  outline: none;
+  border: none;
+}
+
+.main-form {
+  display: block;
+  margin: 20px;
+}
+
+.main-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #EBEBE4;
+  outline: none;
+}
+
+.main-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #EBEBE4;
+  outline: none;
+}
+
+/* Make scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style the scroll and make it beatiful */
+::-webkit-scrollbar {
+  width: 10px;
+}
+ /* Scroll bar cant be seen */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}

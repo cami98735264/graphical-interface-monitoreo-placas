@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+        const isLogged = () => {
+            const res = fetch('/api/auth/check', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status) {
+                    window.location.href = '/'
+                }
+            })
+        }
+        isLogged()
+    </script>
+</head>
+<body>
+    <!-- Crea un formulario login cuyo action sea /api/auth/login -->
+    <form action="/api/auth/login" method="post">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <a href="/register.html">Register</a>
+            <a href="/forgot-password">Forgot Password</a>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+</body>
+</html>
