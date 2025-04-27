@@ -151,7 +151,7 @@ const onSubmitMainForm = (platesData) => {
             })
         } else {
             Swal.fire({
-                title: '¡Bienvenido!',
+                title: '¡Información encontrada!',
                 text: `Placa: ${plate}, Ciudad: ${city}, Departamento: ${department}`,
                 icon: 'success',
                 confirmButtonText: 'Aceptar',
